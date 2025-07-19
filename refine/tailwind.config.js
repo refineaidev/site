@@ -10,6 +10,17 @@ const config = {
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
   ],
+  safelist: [
+    "bg-background",
+    "text-foreground",
+    "border-border",
+    "bg-card",
+    "bg-primary",
+    "bg-secondary",
+    "dark",
+    "font-regular",
+    "font-code",
+  ],
   prefix: "",
   theme: {
     container: {
