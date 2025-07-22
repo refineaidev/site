@@ -15,7 +15,8 @@
         "built_by": "Créé par",
         "source_code_available": "Le code source est disponible sur",
         "deploy": "Déployer",
-        "sponsor": "Sponsor"
+        "sponsor": "Sponsor",
+        "copyright": ""
     },
     "navbar": {
         "links": {

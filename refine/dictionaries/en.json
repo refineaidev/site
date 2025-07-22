@@ -1,21 +1,22 @@
 {
     "metadata": {
-        "title": "AriaDocs - Template",
+        "title": "Refine",
         "description": "This comprehensive documentation template, crafted with Next.js and available as open-source, delivers a sleek and responsive design, tailored to meet all your project documentation requirements."
     },
     "home": {
-        "follow_github": "Follow along on GitHub",
+        "follow_github": "Open Resarch Lab",
         "main_header": "Effortlessly build stunning documentation sites with flexibility for diverse projects.",
         "sub_header": "This feature-packed documentation template, built with multiple frameworks including Next.js, React Router, and TanStack Router, offers a sleek and responsive design, perfect for all your project documentation needs.",
         "get_started": "Get Stared",
         "read_blog": "Read Blog",
-        "name": "AriaDocs"
+        "name": "Refine"
     },
     "footer": {
         "built_by": "Build by",
         "source_code_available": "The source code is available on",
         "deploy": "Deploy",
-        "sponsor": "Sponsor"
+        "sponsor": "Sponsor",
+        "copyright": "All copyright are reserved Refine"
     },
     "navbar": {
         "links": {

@@ -1,0 +1,70 @@
+{
+    "metadata": {
+        "title": "Refine",
+        "description": "قالب وثائق شامل تم تطويره باستخدام Next.js ومتاح كمصدر مفتوح، يتميز بتصميم أنيق ومتجاوب، ومخصص لتلبية جميع متطلبات توثيق مشاريعك."
+    },
+    "home": {
+        "follow_github": "مختبر البحث المفتوح",
+        "main_header": "قم ببناء مواقع توثيق مذهلة بسهولة ومرونة لمشاريع متنوعة.",
+        "sub_header": "يقدم هذا القالب الغني بالميزات، المبني باستخدام أطر عمل متعددة مثل Next.js وReact Router وTanStack Router، تصميمًا أنيقًا ومتجاوبًا مثاليًا لجميع احتياجات توثيق مشاريعك.",
+        "get_started": "ابدأ الآن",
+        "read_blog": "اقرأ المدونة",
+        "name": "Refine"
+    },
+    "footer": {
+        "built_by": "تم البناء بواسطة",
+        "source_code_available": "الكود المصدري متاح على",
+        "deploy": "نشر",
+        "sponsor": "راعي",
+        "copyright": "جميع الحقوق محفوظة لـ Refine"
+    },
+    "navbar": {
+        "links": {
+            "documentation": "التوثيق",
+            "blog": "المدونة",
+            "examples": "أمثلة",
+            "guides": "أدلة",
+            "community": "المجتمع"
+        },
+        "search": {
+            "search_documentation": "ابحث في التوثيق...",
+            "no_results_found": "لم يتم العثور على نتائج لـ",
+            "type_something": "اكتب شيئًا للبحث..."
+        },
+        "theme": {
+            "light": "فاتح",
+            "dark": "داكن",
+            "system": "النظام"
+        }
+    },
+    "docs": {
+        "on_this_page": "في هذه الصفحة",
+        "next": "التالي",
+        "previous": "السابق"
+    },
+    "not_found": {
+        "404": "٤٠٤",
+        "page_not_found": "الصفحة غير موجودة",
+        "sub_text": "عذرًا! الصفحة التي تبحث عنها غير موجودة.",
+        "back_to_homepage": "العودة إلى الصفحة الرئيسية"
+    },
+    "leftbar": {
+        "getting_started": "البدء",
+        "introduction": "مقدمة",
+        "installation": "التثبيت"
+    },
+    "blog": {
+        "title": "أحدث مقالات هذا المنتج",
+        "sub_title": "كل الأخبار والمقالات الحديثة من الفريق مباشرة.",
+        "published_on": "تاريخ النشر",
+        "back_to_blog": "العودة إلى المدونة",
+        "posted_by": "نُشر بواسطة"
+    },
+    "error": {
+        "oops": "عذرًا!",
+        "something_went_wrong": "حدث خطأ ما.",
+        "sub_text": "نأسف، لكن حدث خطأ أثناء معالجة طلبك.",
+        "reload_page": "إعادة تحميل الصفحة",
+        "back_to_homepage": "العودة إلى الصفحة الرئيسية"
+    }
+}

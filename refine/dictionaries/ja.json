@@ -15,7 +15,8 @@
         "built_by": "作成者",
         "source_code_available": "ソースコードは以下で利用可能",
         "deploy": "デプロイ",
-        "sponsor": "スポンサー"
+        "sponsor": "スポンサー",
+        "copyright": ""
     },
     "navbar": {
         "links": {
