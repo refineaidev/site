@@ -14,9 +14,9 @@ export function Footer({ dict }: { dict: Dictionary }) {
           </p>
         </div>
 
-        <div className="gap-4 items-center hidden md:flex">
+        {/* <div className="gap-4 items-center hidden md:flex">
           <FooterButtons dict={dict} />
-        </div>
+        </div> */}
       </div>
     </footer>
   );

@@ -1,8 +1,8 @@
 import { ModeToggle } from "@/components/theme-toggle";
-import { GithubIcon, TwitterIcon, CommandIcon } from "lucide-react";
+import { GithubIcon, TwitterIcon, LinkedinIcon } from "lucide-react";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
-import Search from "./search";
+// import Search from "./search";
 import { SheetLeftbar } from "./leftbar";
 import { page_routes } from "@/lib/routes-config";
 import { SheetClose } from "@/components/ui/sheet";
@@ -11,27 +11,27 @@ import { Dictionary } from "@/lib/dictionaries";
 import LocalizedLink from "./localized-link";
 
 export const NAVLINKS = [
-  {
-    title: "documentation",
-    href: `/docs${page_routes[0].href}`,
-    absolute: true,
-  },
-  {
-    title: "blog",
-    href: "/blog",
-  },
-  {
-    title: "examples",
-    href: "#",
-  },
-  {
-    title: "guides",
-    href: "#",
-  },
-  {
-    title: "community",
-    href: "https://github.com/nisabmohd/Aria-Docs/discussions",
-  },
+  // {
+  //   title: "documentation",
+  //   href: `/docs${page_routes[0].href}`,
+  //   absolute: true,
+  // },
+  // {
+  //   title: "blog",
+  //   href: "/blog",
+  // },
+  // {
+  //   title: "examples",
+  //   href: "#",
+  // },
+  // {
+  //   title: "guides",
+  //   href: "#",
+  // },
+  // {
+  //   title: "community",
+  //   href: "https://github.com/nisabmohd/Aria-Docs/discussions",
+  // },
 ];
 
 export function Navbar({ dict }: { dict: Dictionary }) {
@@ -52,7 +52,7 @@ export function Navbar({ dict }: { dict: Dictionary }) {
 
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-2">
-            <Search dict={dict} />
+            {/* <Search dict={dict} /> */}
             <div className="flex ml-2.5 sm:ml-0">
               <LangSelect />
               <Link
@@ -68,7 +68,7 @@ export function Navbar({ dict }: { dict: Dictionary }) {
                   size: "icon",
                 })}
               >
-                <TwitterIcon className="h-[1.1rem] w-[1.1rem]" />
+                <LinkedinIcon className="h-[1.1rem] w-[1.1rem]" />
               </Link>
               <ModeToggle dict={dict} />
             </div>
@@ -82,8 +82,7 @@ export function Navbar({ dict }: { dict: Dictionary }) {
 export function Logo() {
   return (
     <LocalizedLink href="/" className="flex items-center gap-2.5">
-      <CommandIcon className="w-6 h-6 text-muted-foreground" strokeWidth={2} />
-      <h2 className="text-md font-bold font-code">AriaDocs</h2>
+      <h2 className="text-md font-bold font-code">Refine</h2>
     </LocalizedLink>
   );
 }
