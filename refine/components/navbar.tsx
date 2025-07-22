@@ -1,10 +1,10 @@
 import { ModeToggle } from "@/components/theme-toggle";
-import { GithubIcon, TwitterIcon, LinkedinIcon } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "lucide-react";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 // import Search from "./search";
 import { SheetLeftbar } from "./leftbar";
-import { page_routes } from "@/lib/routes-config";
+// import { page_routes } from "@/lib/routes-config";
 import { SheetClose } from "@/components/ui/sheet";
 import LangSelect from "./lang-select";
 import { Dictionary } from "@/lib/dictionaries";
