@@ -1,8 +1,8 @@
 import LocalizedLink from "@/components/localized-link";
 import { buttonVariants } from "@/components/ui/button";
 import { getDictionary, LangProps } from "@/lib/dictionaries";
-import { page_routes } from "@/lib/routes-config";
-import { MoveUpRightIcon, TerminalSquareIcon } from "lucide-react";
+// import { page_routes } from "@/lib/routes-config";
+import { MoveUpRightIcon } from "lucide-react";
 import Link from "next/link";
 
 export default async function Home({ params }: LangProps) {
@@ -25,16 +25,15 @@ export default async function Home({ params }: LangProps) {
         {dict.home.sub_header}
       </p>
       <div className="flex flex-row items-center gap-5">
-        <LocalizedLink
+        {/* <LocalizedLink
           href={`/docs${page_routes[0].href}`}
           className={buttonVariants({ className: "px-6", size: "lg" })}
         >
           {dict.home.get_started}
-        </LocalizedLink>
+        </LocalizedLink> */}
         <LocalizedLink
           href="/blog"
           className={buttonVariants({
-            variant: "secondary",
             className: "px-6",
             size: "lg",
           })}
@@ -42,10 +41,10 @@ export default async function Home({ params }: LangProps) {
           {dict.home.read_blog}
         </LocalizedLink>
       </div>
-      <span className="flex flex-row items-start sm:gap-2 gap-0.5 text-muted-foreground text-md mt-7 -mb-12 max-[800px]:mb-12 font-code sm:text-base text-sm font-medium">
+      {/* <span className="flex flex-row items-start sm:gap-2 gap-0.5 text-muted-foreground text-md mt-7 -mb-12 max-[800px]:mb-12 font-code sm:text-base text-sm font-medium">
         <TerminalSquareIcon className="w-5 h-5 sm:mr-1 mt-0.5" />
         {"npx create-aria-doc <project-directory>"}
-      </span>
+      </span> */}
     </div>
   );
 }
