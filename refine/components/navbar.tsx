@@ -4,22 +4,22 @@ import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 // import Search from "./search";
 import { SheetLeftbar } from "./leftbar";
-// import { page_routes } from "@/lib/routes-config";
+import { page_routes } from "@/lib/routes-config";
 import { SheetClose } from "@/components/ui/sheet";
 import LangSelect from "./lang-select";
 import { Dictionary } from "@/lib/dictionaries";
 import LocalizedLink from "./localized-link";
 
 export const NAVLINKS = [
-  // {
-  //   title: "documentation",
-  //   href: `/docs${page_routes[0].href}`,
-  //   absolute: true,
-  // },
-  // {
-  //   title: "blog",
-  //   href: "/blog",
-  // },
+  {
+    title: "about us",
+    href: `/abuotus${page_routes[0].href}`,
+    absolute: true,
+  },
+  {
+    title: "blog",
+    href: "/blog",
+  },
   // {
   //   title: "examples",
   //   href: "#",
@@ -44,9 +44,9 @@ export function Navbar({ dict }: { dict: Dictionary }) {
             <div className="sm:flex hidden">
               <Logo />
             </div>
-            <div className="lg:flex hidden items-center gap-4 text-sm font-medium text-muted-foreground">
+            {/* <div className="lg:flex hidden items-center gap-4 text-sm font-medium text-muted-foreground">
               <NavMenu dict={dict} />
-            </div>
+            </div> */}
           </div>
         </div>
 

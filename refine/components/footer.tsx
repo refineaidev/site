@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { buttonVariants } from "./ui/button";
-import { HeartIcon, TriangleIcon } from "lucide-react";
+// import Link from "next/link";
+// import { buttonVariants } from "./ui/button";
+// import { HeartIcon, TriangleIcon } from "lucide-react";
 import { Dictionary } from "@/lib/dictionaries";
 
 export function Footer({ dict }: { dict: Dictionary }) {
@@ -22,23 +22,23 @@ export function Footer({ dict }: { dict: Dictionary }) {
   );
 }
 
-export function FooterButtons({ dict }: { dict: Dictionary }) {
-  return (
-    <>
-      <Link
-        href="https://vercel.com/templates/next.js/documentation-template"
-        className={buttonVariants({ variant: "outline", size: "sm" })}
-      >
-        <TriangleIcon className="h-[0.8rem] w-4 mr-2 text-primary fill-current" />
-        {dict.footer.deploy}
-      </Link>
-      <Link
-        href="https://github.com/sponsors/nisabmohd"
-        className={buttonVariants({ variant: "outline", size: "sm" })}
-      >
-        <HeartIcon className="h-4 w-4 mr-2 text-red-600 fill-current" />
-        {dict.footer.sponsor}
-      </Link>
-    </>
-  );
-}
+// export function FooterButtons({ dict }: { dict: Dictionary }) {
+//   return (
+//     <>
+//       <Link
+//         href="https://vercel.com/templates/next.js/documentation-template"
+//         className={buttonVariants({ variant: "outline", size: "sm" })}
+//       >
+//         <TriangleIcon className="h-[0.8rem] w-4 mr-2 text-primary fill-current" />
+//         {dict.footer.deploy}
+//       </Link>
+//       <Link
+//         href="https://github.com/sponsors/nisabmohd"
+//         className={buttonVariants({ variant: "outline", size: "sm" })}
+//       >
+//         <HeartIcon className="h-4 w-4 mr-2 text-red-600 fill-current" />
+//         {dict.footer.sponsor}
+//       </Link>
+//     </>
+//   );
+// }
