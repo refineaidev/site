@@ -5,8 +5,8 @@
     },
     "home": {
         "follow_github": "Open Resarch Lab",
-        "main_header": "The Future of AI Depends on the Data We Build It With",
-        "sub_header": "Our lab investigates how data quality drives AI performance, fairness, and transparency.",
+        "main_header": "Building Scientific Foundations for Data-Driven AI Research",
+        "sub_header": "From curation to evaluation, we focus on the measurable impact of data on model performance and reliability",
         "get_started": "Get Stared",
         "read_blog": "Read Blog",
         "name": "Refine"
