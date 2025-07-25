@@ -6,6 +6,7 @@ import { Footer } from "@/components/footer";
 import { getDictionary, LangProps } from "@/lib/dictionaries";
 import { ClientDictionary } from "@/components/contexts/dictionary-provider";
 import { locales } from "@/lib/locale";
+import { Analytics } from "@vercel/analytics/next"
 import "@/styles/globals.css";
 
 const sansFont = Space_Grotesk({
@@ -62,6 +63,7 @@ export default async function RootLayout({
             <Footer dict={dict} />
           </ThemeProvider>
         </ClientDictionary>
+        <Analytics />
       </body>
     </html>
   );
