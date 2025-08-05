@@ -10,6 +10,7 @@ import { page_routes, ROUTES } from "./routes-config";
 import { visit } from "unist-util-visit";
 import matter from "gray-matter";
 import { Locale } from "./locale";
+import NextImage from 'next/image';
 
 // custom components imports
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -228,4 +229,18 @@ export async function getBlogForSlug(slug: string, lang: Locale) {
   } catch {
     return undefined;
   }
+}
+
+export default function Image(props: any) {
+  const { src, alt, width = 800, height = 400, ...rest } = props;
+
+  return (
+    <NextImage
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      {...rest}
+    />
+  );
 }

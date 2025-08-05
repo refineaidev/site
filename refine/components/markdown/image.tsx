@@ -1,8 +1,13 @@
 import { ComponentProps } from "react";
 import NextImage from "next/image";
 
-type Height = ComponentProps<typeof NextImage>["height"];
-type Width = ComponentProps<typeof NextImage>["width"];
+type Height = number | undefined;
+type Width = number | undefined;
+
+interface Props extends Omit<ComponentProps<typeof NextImage>, "width" | "height"> {
+  width?: string | number;
+  height?: string | number;
+}
 
 export default function Image({
   src,
@@ -10,15 +15,20 @@ export default function Image({
   width = 800,
   height = 350,
   ...props
-}: ComponentProps<"img">) {
+}: Props) {
   if (!src) return null;
+
+  const widthNum = typeof width === "string" ? parseInt(width, 10) : width;
+  const heightNum = typeof height === "string" ? parseInt(height, 10) : height;
+
   return (
     <NextImage
       src={src}
       alt={alt}
-      width={width as Width}
-      height={height as Height}
+      width={widthNum}
+      height={heightNum}
       quality={40}
+      // Remove unoptimized for production to enable Next.js optimization
       {...props}
     />
   );
