@@ -1,8 +1,6 @@
 import { ComponentProps } from "react";
 import NextImage from "next/image";
 
-type Height = number | undefined;
-type Width = number | undefined;
 
 interface Props extends Omit<ComponentProps<typeof NextImage>, "width" | "height"> {
   width?: string | number;
