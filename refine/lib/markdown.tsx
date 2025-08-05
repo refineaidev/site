@@ -10,7 +10,8 @@ import { page_routes, ROUTES } from "./routes-config";
 import { visit } from "unist-util-visit";
 import matter from "gray-matter";
 import { Locale } from "./locale";
-import NextImage from 'next/image';
+
+import type { Root, Element, Literal } from "hast";
 
 // custom components imports
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -153,25 +154,34 @@ export async function getAllChilds(pathString: string) {
 
 // for copying the code in pre
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const preProcess = () => (tree: any) => {
-  visit(tree, (node) => {
-    if (node?.type === "element" && node?.tagName === "pre") {
-      const [codeEl] = node.children;
-      if (codeEl.tagName !== "code") return;
-      node.raw = codeEl.children?.[0].value;
-    }
-  });
-};
+ // Define an extended Element type with the custom 'raw' property
+interface ElementWithRaw extends Element {
+  raw?: string;
+}
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const postProcess = () => (tree: any) => {
+const preProcess = () => (tree: Root) => {
   visit(tree, "element", (node) => {
-    if (node?.type === "element" && node?.tagName === "pre") {
-      node.properties["raw"] = node.raw;
+    if (node.tagName === "pre") {
+      const codeEl = node.children?.[0] as Element | undefined;
+      const literal = codeEl?.children?.[0] as Literal | undefined;
+      if (!codeEl || codeEl.tagName !== "code" || !literal?.value) return;
+
+      // Assign the custom property with typed node
+      (node as ElementWithRaw).raw = literal.value;
     }
   });
 };
 
+const postProcess = () => (tree: Root) => {
+  visit(tree, "element", (node) => {
+    if (node.tagName === "pre") {
+      const typedNode = node as ElementWithRaw;
+      if (typedNode.raw) {
+        node.properties["raw"] = typedNode.raw;
+      }
+    }
+  });
+};
 export type Author = {
   avatar?: string;
   handle: string;
@@ -229,18 +239,4 @@ export async function getBlogForSlug(slug: string, lang: Locale) {
   } catch {
     return undefined;
   }
-}
-
-export default function Image(props: any) {
-  const { src, alt, width = 800, height = 400, ...rest } = props;
-
-  return (
-    <NextImage
-      src={src}
-      alt={alt}
-      width={width}
-      height={height}
-      {...rest}
-    />
-  );
 }
