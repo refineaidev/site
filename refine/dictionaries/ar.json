@@ -8,6 +8,7 @@
         "main_header": "قم ببناء مواقع توثيق مذهلة بسهولة ومرونة لمشاريع متنوعة.",
         "sub_header": "يقدم هذا القالب الغني بالميزات، المبني باستخدام أطر عمل متعددة مثل Next.js وReact Router وTanStack Router، تصميمًا أنيقًا ومتجاوبًا مثاليًا لجميع احتياجات توثيق مشاريعك.",
         "get_started": "ابدأ الآن",
+        "our_values": "قيمنا",
         "read_blog": "اقرأ المدونة",
         "name": "Refine"
     },
@@ -37,6 +38,12 @@
             "system": "النظام"
         }
     },
+        "about": {
+          "heading": "About Us",
+          "paragraph1": "We’re on a mission to simplify AI development for everyone.",
+          "paragraph2": "Our tools are built with developers in mind, enabling rapid iteration and scalability.",
+          "paragraph3": "Join us as we redefine what's possible with intelligent systems."
+        },
     "docs": {
         "on_this_page": "في هذه الصفحة",
         "next": "التالي",

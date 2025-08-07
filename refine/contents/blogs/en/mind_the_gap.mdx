@@ -11,13 +11,11 @@ authors:
 cover: "https://img.freepik.com/premium-vector/many-monsters-various-colors-doodle-come-bless-birthday-happy_577083-85.jpg?w=826"
 ---
 
-![](/en/home.png)
-
 In training large language models (LLMs), **post-training** has become the secret sauce that turns powerful but generic language models into finely tuned assistants that actually understand what you want. While most people have heard of "training" and maybe even "fine-tuning," post-training is the magic layer that aligns a language model with real-world expectations: understanding your instructions, staying safe, and behaving like a good digital citizen.
 
 For **Arabic**, that magic is still hard to come by.
 
----
+
 
 ## The Problem: Plenty of Models, Not Enough (Good) Data
 
@@ -33,7 +31,7 @@ Our recent study systematically reviewed all publicly available Arabic post-trai
 * Over **50%** of the datasets are **rarely or never used** in real-world models.
 * Only a handful are updated regularly or have **strong documentation**, **licensing**, or **academic validation**.
 
----
+
 
 ## Why This Matters
 
@@ -50,7 +48,7 @@ Imagine building a chatbot for an Arabic-speaking audience. If all your data is 
 3. **Missing Support for Advanced Tasks**
    Code generation, system prompting, and robust function calling? Arabic datasets for these are either **missing** or **experimental** at best.
 
----
+
 
 ## What We Found
 
@@ -66,7 +64,8 @@ We analyzed Arabic datasets across **12 NLP domains**. Here's a snapshot of wher
 
 > Only **57 out of 366 datasets** are used in actual models. The rest sit unused, untested, or unnoticed.
 
----
+![](/en/mind_the_gap_1.png)
+
 
 ## What We Need (And How to Build It)
 
@@ -96,7 +95,7 @@ Focus on the domains where Arabic is critically underrepresented:
 * Use LLMs for **first-pass annotation**, followed by **human review**
 * Prompt existing Arabic-capable LLMs to generate **synthetic—but verified—data**
 
----
+
 
 ## Let’s Build Together
 
@@ -110,6 +109,3 @@ So whether you’re a **researcher**, a **developer**, or a **language lover**, 
 
 *Study based on analysis of Arabic datasets on [Hugging Face](https://huggingface.co/).*
 
----
-
-Let me know if you want this formatted for a blog post, academic paper, or GitHub README.

@@ -8,6 +8,7 @@
         "main_header": "Building Scientific Foundations for Data-Driven AI Research",
         "sub_header": "From curation to evaluation, we focus on the measurable impact of data on model performance and reliability",
         "get_started": "Get Stared",
+        "our_values": "Our Values",
         "read_blog": "Read Blog",
         "name": "Refine"
     },
@@ -37,6 +38,12 @@
             "system": "System"
         }
     },
+    "about": {
+        "heading": "About Us",
+        "paragraph1": "We’re on a mission to simplify AI development for everyone.",
+        "paragraph2": "Our tools are built with developers in mind, enabling rapid iteration and scalability.",
+        "paragraph3": "Join us as we redefine what's possible with intelligent systems."
+      },
     "docs": {
         "on_this_page": "On this page",
         "next": "Next",
@@ -54,7 +61,7 @@
         "installation": "Installation"
     },
     "blog": {
-        "title": "The latest blogs of this product",
+        "title": "The latest blogs",
         "sub_title": "All the latest blogs and news, straight from the team.",
         "published_on": "Published on",
         "back_to_blog": "Back to blog",

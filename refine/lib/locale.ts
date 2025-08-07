@@ -1,5 +1,4 @@
-export const locales = ["en", "fr", "ja", "ar"] as const;
-
+export const locales = ["en", "ar"] as const;
 export type Locale = typeof locales[number];
 
 export function getLocale(pathname: string) {
