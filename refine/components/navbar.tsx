@@ -4,7 +4,6 @@ import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 // import Search from "./search";
 import { SheetLeftbar } from "./leftbar";
-import { page_routes } from "@/lib/routes-config";
 import { SheetClose } from "@/components/ui/sheet";
 import LangSelect from "./lang-select";
 import { Dictionary } from "@/lib/dictionaries";
