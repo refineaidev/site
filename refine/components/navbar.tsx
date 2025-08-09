@@ -91,7 +91,6 @@ export function NavMenu({
             className="flex items-center gap-1 dark:text-stone-300/85 text-stone-800"
             activeClassName="!text-red-600 dark:font-medium font-semibold"
             href={item.href}
-            absolute={item.absolute}
           >
             {dict.navbar.links[item.key as keyof typeof dict.navbar.links]}
           </LocalizedLink>
