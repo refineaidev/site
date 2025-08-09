@@ -38,11 +38,13 @@
             "system": "النظام"
         }
     },
-        "about": {
-          "heading": "About Us",
-          "paragraph1": "We’re on a mission to simplify AI development for everyone.",
-          "paragraph2": "Our tools are built with developers in mind, enabling rapid iteration and scalability.",
-          "paragraph3": "Join us as we redefine what's possible with intelligent systems."
+    "about": {
+        "metaTitle": "عن Refine",
+        "metaDescription": "اكتشف المزيد عن Refine، الأداة التي تبسط تطوير الذكاء الاصطناعي للجميع.",
+        "heading": "About Us",
+        "paragraph1": "We’re on a mission to simplify AI development for everyone.",
+        "paragraph2": "Our tools are built with developers in mind, enabling rapid iteration and scalability.",
+        "paragraph3": "Join us as we redefine what's possible with intelligent systems."
         },
     "docs": {
         "on_this_page": "في هذه الصفحة",
