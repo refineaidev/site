@@ -4,78 +4,67 @@ import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 // import Search from "./search";
 import { SheetLeftbar } from "./leftbar";
-// import { page_routes } from "@/lib/routes-config";
+import { page_routes } from "@/lib/routes-config";
 import { SheetClose } from "@/components/ui/sheet";
 import LangSelect from "./lang-select";
 import { Dictionary } from "@/lib/dictionaries";
 import LocalizedLink from "./localized-link";
 
+// ✅ Use "key" instead of "title"
 export const NAVLINKS = [
   {
-    title: "about us",
-    href: `/about`,
-    absolute: true,
+    key: "about", 
+    href: "/about",
   },
   {
-    title: "blog",
+    key: "blog",
     href: "/blog",
   },
-  {
-    title: "about",
-    href: "#",
-  },
-  // {
-  //   title: "guides",
-  //   href: "#",
-  // },
-  // {
-  //   title: "community",
-  //   href: "https://github.com/nisabmohd/Aria-Docs/discussions",
-  // },
 ];
+
 
 export function Navbar({ dict }: { dict: Dictionary }) {
   return (
-    <nav className="w-full border-b h-16 sticky top-0 z-50 bg-background">
-      <div className="sm:container mx-auto w-[95vw] h-full flex items-center justify-between md:gap-2">
-        <div className="flex items-center gap-5">
-          <SheetLeftbar dict={dict} />
-          <div className="flex items-center gap-6">
-            <div className="sm:flex hidden">
-              <Logo />
-            </div>
-            <div className="lg:flex hidden items-center gap-4 text-sm font-medium text-muted-foreground">
-              <NavMenu dict={dict} />
-            </div>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-3">
-          <div className="flex items-center gap-2">
-            {/* <Search dict={dict} /> */}
-            <div className="flex ml-2.5 sm:ml-0">
-              <LangSelect />
-              <Link
-                href="https://github.com/nisabmohd/NexDocs"
-                className={buttonVariants({ variant: "ghost", size: "icon" })}
-              >
-                <GithubIcon className="h-[1.1rem] w-[1.1rem]" />
-              </Link>
-              <Link
-                href="#"
-                className={buttonVariants({
-                  variant: "ghost",
-                  size: "icon",
-                })}
-              >
-                <LinkedinIcon className="h-[1.1rem] w-[1.1rem]" />
-              </Link>
-              <ModeToggle dict={dict} />
-            </div>
-          </div>
-        </div>
+<nav className="w-full border-b h-16 sticky top-0 z-50 bg-background">
+  <div className="sm:container mx-auto w-[95vw] h-full flex items-center justify-between">
+    {/* Left: Logo + Leftbar */}
+    <div className="flex items-center gap-4 min-w-[120px]">
+      <SheetLeftbar dict={dict} />
+      <div className="sm:flex hidden">
+        <Logo />
       </div>
-    </nav>
+    </div>
+
+    {/* Center: Navigation links */}
+    <div className="lg:flex hidden items-center gap-6 text-sm font-medium text-muted-foreground">
+      <NavMenu dict={dict} />
+    </div>
+
+    {/* Right: Language, GitHub, LinkedIn, Toggle */}
+    <div className="flex items-center gap-3">
+      <div className="flex items-center gap-2">
+        <LangSelect />
+        <Link
+          href="https://github.com/refineaidev"
+          className={buttonVariants({ variant: "ghost", size: "icon" })}
+        >
+          <GithubIcon className="h-[1.1rem] w-[1.1rem]" />
+        </Link>
+        <Link
+          href="#"
+          className={buttonVariants({
+            variant: "ghost",
+            size: "icon",
+          })}
+        >
+          <LinkedinIcon className="h-[1.1rem] w-[1.1rem]" />
+        </Link>
+        <ModeToggle dict={dict} />
+      </div>
+    </div>
+  </div>
+</nav>
+
   );
 }
 
@@ -99,17 +88,17 @@ export function NavMenu({
       {NAVLINKS.map((item) => {
         const Comp = (
           <LocalizedLink
-            key={item.title + item.href}
+            key={item.key + item.href}
             className="flex items-center gap-1 dark:text-stone-300/85 text-stone-800"
             activeClassName="!text-red-600 dark:font-medium font-semibold"
             href={item.href}
             absolute={item.absolute}
           >
-            {dict.navbar.links[item.title as keyof typeof dict.navbar.links]}
+            {dict.navbar.links[item.key as keyof typeof dict.navbar.links]}
           </LocalizedLink>
         );
         return isSheet ? (
-          <SheetClose key={item.title + item.href} asChild>
+          <SheetClose key={item.key + item.href} asChild>
             {Comp}
           </SheetClose>
         ) : (

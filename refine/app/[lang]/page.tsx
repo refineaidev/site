@@ -35,13 +35,13 @@ export default async function HomeWithBlog({ params }: LangProps) {
       </p>
       <div className="flex flex-row items-center gap-5 mb-12">
         <LocalizedLink
-          href="/about"
+          href=""
           className={buttonVariants({
             className: "px-6",
             size: "lg",
           })}
         >
-          {dict.home.our_values}
+          {dict.home.join_community}
         </LocalizedLink>
       </div>
 

@@ -1,77 +1,89 @@
 {
     "metadata": {
-        "title": "Refine",
-        "description": "This comprehensive documentation template, crafted with Next.js and available as open-source, delivers a sleek and responsive design, tailored to meet all your project documentation requirements."
+      "title": "Refine",
+      "description": "This comprehensive documentation template, crafted with Next.js and available as open-source, delivers a sleek and responsive design, tailored to meet all your project documentation requirements."
     },
     "home": {
-        "follow_github": "Open Resarch Lab",
-        "main_header": "Building Scientific Foundations for Data-Driven AI Research",
-        "sub_header": "From curation to evaluation, we focus on the measurable impact of data on model performance and reliability",
-        "get_started": "Get Stared",
-        "our_values": "Our Values",
-        "read_blog": "Read Blog",
-        "name": "Refine"
+      "follow_github": "Open Research Lab",
+      "main_header": "Building Scientific Foundations for Data-Driven AI Research",
+      "sub_header": "From curation to evaluation, we focus on the measurable impact of data on model performance and reliability",
+      "get_started": "Get Started",
+      "our_values": "Our Values",
+      "read_blog": "Read Blog",
+      "name": "Refine",
+      "join_community": "Join Our Community"
     },
     "footer": {
-        "built_by": "Build by",
-        "source_code_available": "The source code is available on",
-        "deploy": "Deploy",
-        "sponsor": "Sponsor",
-        "copyright": "All copyright are reserved Refine"
+      "built_by": "Built by",
+      "source_code_available": "The source code is available on",
+      "deploy": "Deploy",
+      "sponsor": "Sponsor",
+      "copyright": "All rights reserved © Refine"
     },
     "navbar": {
-        "links": {
-            "documentation": "Documentation",
-            "blog": "Blog",
-            "examples": "Examples",
-            "guides": "Guides",
-            "community": "Community"
-        },
-        "search": {
-            "search_documentation": "Search documentation...",
-            "no_results_found": " No results found for",
-            "type_something": "Type something to search..."
-        },
-        "theme": {
-            "light": "Light",
-            "dark": "Dark",
-            "system": "System"
-        }
+      "links": {
+        "about": "Our Mission",
+        "documentation": "Documentation",
+        "blog": "Blog",
+        "examples": "Examples",
+        "guides": "Guides",
+        "community": "Community"
+      },
+      "search": {
+        "search_documentation": "Search documentation...",
+        "no_results_found": " No results found for",
+        "type_something": "Type something to search..."
+      },
+      "theme": {
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System"
+      }
     },
     "about": {
-        "heading": "About Us",
-        "paragraph1": "We’re on a mission to simplify AI development for everyone.",
-        "paragraph2": "Our tools are built with developers in mind, enabling rapid iteration and scalability.",
-        "paragraph3": "Join us as we redefine what's possible with intelligent systems."
-      },
+        "heading": "Welcome to Refine AI",
+        "paragraph1": "Refine AI is an open-science artificial intelligence research lab dedicated to pioneering data quality—the foundation of efficient, reliable, and fair AI development. In a world where AI is increasingly integrated into critical applications, poor-quality data leads to biased, inefficient, and unreliable AI systems. We believe that high-quality, well-structured, and representative training datasets are essential for building robust AI models that generalize across diverse real-world scenarios.",
+        "paragraph2": "At Refine AI, we recognize that while advancements in AI training algorithms have been significant, the progress in training data quality has not kept pace. We are committed to addressing this gap through innovative solutions that enhance the foundation of AI models. We aim to advance research on data quality for optimal and efficient AI training. We also work on detecting and mitigating bias to ensure fairness and responsibility in AI systems. To tackle challenges like data scarcity and privacy concerns, we focus on synthetic data generation, which strengthens model robustness. Furthermore, we aim to bridge the AI accessibility gap by developing high-quality datasets for low-resource languages, empowering more inclusive and diverse AI systems.",
+        "paragraph3": "We are a team of AI scientists and engineers, drawing expertise from both academia and industry, who have developed pioneering large language models like ALLaM and AceGPT.",
+        "paragraph4": "Our mission is to democratize AI research and development by providing open-source tools, datasets, and resources that empower researchers, developers, and organizations to build high-quality AI systems. We believe in the power of collaboration and knowledge sharing to drive innovation and accelerate progress in the field of AI.",
+        "subheading1": "Our Mission",
+        "paragraph5": "AI models are only as good as the data they are trained on. Poorly curated datasets result in inefficiencies, unreliable predictions, and biased decision-making. High-quality, diverse, and well-annotated data is crucial for making AI fairer, safer, and more efficient across all domains.",
+        "subheading2": "Pioneering Synthetic Data for AI Training",
+        "paragraph6": "Synthetic data generation is a key focus area for us. By creating high-quality synthetic datasets, we can overcome challenges like data scarcity, privacy concerns, and bias in training data. Our synthetic data solutions are designed to enhance model robustness and generalization across diverse real-world scenarios.",
+        "subheading3": "Championing Low-Resource Languages",
+        "paragraph7": "Most AI models today are trained on data from high-resource languages, leaving billions of speakers of low-resource languages underserved. At Refine AI, we are committed to developing high-quality datasets, benchmarks, and synthetic data solutions for low-resource languages, ensuring that AI is more inclusive, culturally aware, and globally impactful.",
+        "subheading4": "Committing to Open Science",
+        "paragraph8": "We believe in the principles of open science, which means making our research, datasets, and tools freely available to the global community. By sharing our findings and resources, we aim to foster collaboration, accelerate innovation, and contribute to the collective knowledge in the field of AI. Our commitment to transparency and openness is at the core of everything we do.",
+        "paragraph9": " Join us in building high-quality, ethical, and efficient AI for all."    },
     "docs": {
-        "on_this_page": "On this page",
-        "next": "Next",
-        "previous": "Previous"
+      "on_this_page": "On this page",
+      "next": "Next",
+      "previous": "Previous"
     },
     "not_found": {
-        "404": "404",
-        "page_not_found": "Page not found",
-        "sub_text": "Oops! The page you're looking for doesn't exist.",
-        "back_to_homepage": "Back to homepage"
+      "404": "404",
+      "page_not_found": "Page not found",
+      "sub_text": "Oops! The page you're looking for doesn't exist.",
+      "back_to_homepage": "Back to homepage"
     },
     "leftbar": {
-        "getting_started": "Getting Started",
-        "introduction": "Introduction",
-        "installation": "Installation"
+      "getting_started": "Getting Started",
+      "introduction": "Introduction",
+      "installation": "Installation"
     },
     "blog": {
-        "title": "The latest blogs",
-        "sub_title": "All the latest blogs and news, straight from the team.",
-        "published_on": "Published on",
-        "back_to_blog": "Back to blog",
-        "posted_by": "Posted by"
+      "title": "The latest blogs",
+      "sub_title": "All the latest blogs and news, straight from the team.",
+      "published_on": "Published on",
+      "back_to_blog": "Back to blog",
+      "posted_by": "Posted by"
     },
     "error": {
-        "oops": "Oops!",
-        "something_went_wrong": "Something went wrong.",
-        "sub_text": "We're sorry, but an error occurred while processing your request.",
-        "reload_page": "Reload Page",
-        "back_to_homepage": "Back to homepage"
+      "oops": "Oops!",
+      "something_went_wrong": "Something went wrong.",
+      "sub_text": "We're sorry, but an error occurred while processing your request.",
+      "reload_page": "Reload Page",
+      "back_to_homepage": "Back to homepage"
     }
-}
+  }
+  

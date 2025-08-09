@@ -21,6 +21,10 @@ export default async function AboutPage({ params }: LangProps) {
       <p className="mb-4 text-lg text-muted-foreground">{dict.about.paragraph1}</p>
       <p className="mb-4 text-lg text-muted-foreground">{dict.about.paragraph2}</p>
       <p className="text-lg text-muted-foreground">{dict.about.paragraph3}</p>
+      <h2 className="text-2xl font-bold mt-8 mb-4">{dict.about.subheading1}</h2>
+      <p className="mb-4 text-lg text-muted-foreground">{dict.about.paragraph4}</p>
+      <p className="mb-4 text-lg text-muted-foreground">{dict.about.paragraph9}</p>
+
     </section>
   );
 }
