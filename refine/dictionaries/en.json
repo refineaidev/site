@@ -27,7 +27,8 @@
         "blog": "Blog",
         "examples": "Examples",
         "guides": "Guides",
-        "community": "Community"
+        "community": "Community",
+        "research": "Research"
       },
       "search": {
         "search_documentation": "Search documentation...",
@@ -55,6 +56,10 @@
         "subheading4": "Committing to Open Science",
         "paragraph8": "We believe in the principles of open science, which means making our research, datasets, and tools freely available to the global community. By sharing our findings and resources, we aim to foster collaboration, accelerate innovation, and contribute to the collective knowledge in the field of AI. Our commitment to transparency and openness is at the core of everything we do.",
         "paragraph9": " Join us in building high-quality, ethical, and efficient AI for all."    },
+
+    "research": {
+      "heading": "Our Research"
+    },
     "docs": {
       "on_this_page": "On this page",
       "next": "Next",

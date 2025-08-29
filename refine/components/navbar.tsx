@@ -9,11 +9,14 @@ import LangSelect from "./lang-select";
 import { Dictionary } from "@/lib/dictionaries";
 import LocalizedLink from "./localized-link";
 
-// ✅ Use "key" instead of "title"
 export const NAVLINKS = [
   {
     key: "about", 
     href: "/about",
+  },
+  {
+    key: "research", 
+    href: "/research",
   },
   {
     key: "blog",
