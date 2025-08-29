@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "img.freepik.com",
+        hostname: "i.postimg.cc",
       },
       // Allow localhost only in development
       ...(process.env.NODE_ENV === "development"
